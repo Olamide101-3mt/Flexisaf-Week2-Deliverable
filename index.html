@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week2_Form</title>
+</head>
+<body>
+   <!-- header section -->
+   <header>
+    <h1>Olamide Wahab</h1>
+    <p>Web Developer | Tech Enthusiast</p>
+   </header>
+   <hr>
+
+   <!-- navigation bar -->
+    <nav>
+      <ul>
+        <li><a href ="#about-me">About Me</a></li>
+        <li><a href ="#projects">Projects</a></li>
+        <li><a href ="#contacts">Work With Me</a></li>
+      </ul>
+    </nav>
+
+    <!-- About section -->
+    <section id="about-me">
+      <h2>About Me</h2>
+      <p style="font-family: 'Times New Roman', Times, serif;">Frontend Developer with a solid foundation in HTML, CSS, and JavaScript, currently building
+         core web development skills through hands-on practice and structured learning.<br><br> Passionate about
+          creating clean, responsive, and visually appealing user interfaces. Eager to grow in the tech
+          space by working on real-world projects, learning modern frameworks, and contributing to 
+          user-centered digital experiences. Committed to continuous learning, problem-solving, and 
+          building a strong foundation in frontend development best practices.</p>
+    </section>
+
+    <!-- projects section -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><a href="#" target="_blank">JavaScript Calculator</a></li>
+        <li><a href="#" target="_blank">Recipe Page</a></li>
+        <li><a href="#" target="_blank">Form Registration</a></li>
+        <li><a href="#" target="_blank">To-Do List Page</a></li>
+      </ul>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contacts">
+      <h2>Work With Me</h2>
+      <form onsubmit="alert('Booking Submitted successfully');" >
+        <!-- input for name -->
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" placeholder="John" required>
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" placeholder="Doe" required><br><br>
+
+        <!-- input for email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="johndoe@gmail.com" required>
+
+
+        <!-- input for number -->
+        <label for="number">Phone No:</label>
+        <input type="number" id="number" name="lname" required placeholder="+234 00 0000 0000"><br><br>
+
+        <!-- label for Purpose of contact -->
+        <label for="purpose">What is this about?</label><br><br>
+
+        <input type="radio" id="project" name="purpose">
+        <label for="project">Project</label>
+        <input type="radio" id="collab" name="purpose">
+        <label for="collab">Collaboration</label>
+        <input type="radio" id="Hire" name="purpose">
+        <label for="Hire">Hiring</label><br><br>
+
+        <!-- label for text area -->
+        <label for="message">Message:</label><br><br>
+        <textarea name="message" id="message" rows="6" cols="40"></textarea><br><br>
+
+        <!-- input for file upload -->
+        <label for="document"> Attach a Document (Optional):</label><br>
+        <input type="file" id="document" name="document"><br><br>
+
+        <!-- input for checkbox -->
+        <input type="checkbox" id="agreement" name="agreement" required>
+        <label for="agreement">I accept terms and conditions</label><br><br>
+
+        <input type="submit" value="Submit" >
+      
+      </form>
+    </section>
+    <hr>
+    <!-- footer -->
+    <footer>
+      <p>&copy; 2025 Olamide Wahab. All rights reserved.</p>
+    </footer>
+
+    <!-- Task to eork on next:
+     1. make sure your form shows successful once submitted
+     2. You can look for one more input to add
+     3. push your code to github
+     4. publish on vercel
+     5. find out about forms.io -->
+</body>
+</html>
