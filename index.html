@@ -47,7 +47,7 @@
     <!-- Contact section -->
     <section id="contacts">
       <h2>Work With Me</h2>
-      <form action="https://formsubmit.io/send/wahabolamide466@gmail.com.com" method="post" onsubmit="alert('Booking Submitted Successfully');">
+      <form action="https://formsubmit.io/send/wahabolamide466@gmail.com" method="post" onsubmit="alert('Booking Submitted Successfully');">
         <!-- input for name -->
         <label for="fname">First Name:</label>
         <input type="text" id="fname" name="firstname" placeholder="John" required>
@@ -66,11 +66,11 @@
         <!-- label for Purpose of contact -->
         <label for="purpose">What is this about?</label><br><br>
 
-        <input type="radio" id="project" name="purpose">
+        <input type="radio" id="project" name="purpose" value="Project">
         <label for="project">Project</label>
-        <input type="radio" id="collab" name="purpose">
+        <input type="radio" id="collab" name="purpose" value="Collaboration">
         <label for="collab">Collaboration</label>
-        <input type="radio" id="Hire" name="purpose">
+        <input type="radio" id="Hire" name="purpose" value="Hiring">
         <label for="Hire">Hiring</label><br><br>
 
         <!-- label for text area -->
@@ -81,10 +81,11 @@
         <label for="document"> Attach a Document (Optional):</label><br>
         <input type="file" id="document" name="files"><br><br>
 
-        <!-- input for checkbox -->
+        <!-- input for checkbox 
         <input type="checkbox" id="agreement" name="agree" required>
         <label for="agreement">I accept terms and conditions</label><br><br>
 
+        -->
         <input type="submit" value="Submit" >
       
       </form>
